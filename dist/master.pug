@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+    body
+        header
+        main
+            form(action="/process" method="post")
+                input(type="hidden", name="_csrf", value=csrfToken)
+                span Name:
+                input(type="text", name="name", required=true)
+                br
+                input(type="submit")
+        footer
+        <script type="text/javascript" src="metas-5fb365798c00e82f79e1-1501421841948.js"></script><script type="text/javascript" src="lib-0ec05a92f58dfc4270f0-1501421841947.js"></script><script type="text/javascript" src="application-5fb365798c00e82f79e1-1501421841944.js"></script>

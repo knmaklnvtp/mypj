@@ -1,0 +1,45 @@
+{
+  "name": "learnreactredux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "clean-webpack-plugin": "^0.1.16",
+    "cookie-parser": "^1.4.3",
+    "csurf": "^1.9.0",
+    "express": "^4.15.3",
+    "html-webpack-plugin": "^2.29.0",
+    "path": "^0.12.7",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.2",
+    "redux": "^3.7.2",
+    "webpack": "^3.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "css-loader": "^0.28.4",
+    "eslint": "^4.3.0",
+    "nodemon": "^1.11.0",
+    "pug": "^2.0.0-rc.2",
+    "style-loader": "^0.18.2",
+    "webpack-dev-server": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack --config ./webpack/client.webpack.config.js --env.type=development --progress --color",
+    "build:prod": "webpack --config ./webpack/client.webpack.config.js --env.type=production --progress --color",
+    "start": "node ./server/application.js",
+    "dev": "nodemon ./server/application.js"
+  },
+  "author": "luan",
+  "license": "ISC"
+}
